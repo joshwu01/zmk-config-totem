@@ -47,16 +47,24 @@
     keymap {
         compatible = "zmk,keymap";
 
+        // Staandard QWERTY layout with layers for Symbols, Navigation, and Adjust functions
+        // left thumb switches to symbol layer, right thumb switches to navigation layer
+        // Edge keys are Esc and single quote
+
         Base {
             label = "Base";
             bindings = <
                      &kp Q  &kp W  &kp E     &kp R    &kp T                      &kp Y      &kp U    &kp I      &kp O    &kp P
                      &kp A  &kp S  &kp D     &kp F    &kp G                      &kp H      &kp J    &kp K      &kp L    &kp SEMI
-            &kp ESC  &kp Z  &kp X  &kp C     &kp V    &kp B                      &kp N      &kp M    &kp COMMA  &kp DOT  &kp SLASH  &kp SQT
+            &kp ESC  &kp Z  &kp X  &kp C     &kp V    &kp B                      &kp N      &kp M    &kp COMMA  &kp DOT  &kp SLASH  &kp SQT 
                                    &kp BSPC  &mo Sym  &kp LSHFT                  &kp SPACE  &mo Nav  &kp RET
             >;
         };
 
+        // Symbol layer. First row has brackets and comparison operators
+        // Home row has shift, alt, gui, ctrl, equal, tilde, and scroll up/down (a little nav spillover)
+        // Central columns have &, @, =, ~, = and ^
+        // Bottom row has tab, hash, pipe, star, minus, plus, caret, backslash, dollar, exclamaion, percent, grave
         Sym {
             label = "Sym";
             bindings = <
@@ -67,6 +75,10 @@
             >;
         };
 
+        // Navigation layer. Arrow keys on home row, mouse movement and clicking/scroolling on the left hand
+        // Underscore lives here to be shiftable from the symbol layer
+        // Extra modifiers on the top right row, and number pad on the bottom row
+
         Nav {
             label = "Nav";
             bindings = <
@@ -76,6 +88,9 @@
                                                 &kp DEL        &mo Sym         &kp LSHFT               &none    &none      &none
             >;
         };
+
+        // Adjust layer. Activated when both Symbol and Navigation layers are active
+        // Should have media controls on the top row and Bluetooth/power controls on the left
 
         Adjust {
             label = "Adjust";

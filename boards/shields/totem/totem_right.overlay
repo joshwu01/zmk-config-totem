@@ -1,15 +1,10 @@
-/*
- * Copyright (c) 2022 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
-#include "totem.dtsi"
+#include "totem.dtsi" // The shared dtsi file is included in the overlay
 
 &default_transform {
     col-offset = <5>;
 };
 
+// Label of the kscan node in the dtsi
 &kscan0 {
     col-gpios
         = <&xiao_d 8 GPIO_ACTIVE_HIGH>

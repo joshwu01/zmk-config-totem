@@ -1,8 +1,7 @@
-# Copyright (c) 2022 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
+# No whitespace after the comma or in your part name!
 config SHIELD_TOTEM_LEFT
     def_bool $(shields_list_contains,totem_left)
 
+# No whitespace after the comma or in your part name!
 config SHIELD_TOTEM_RIGHT
     def_bool $(shields_list_contains,totem_right)

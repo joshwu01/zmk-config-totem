@@ -70,8 +70,8 @@
             bindings = <
                           &kp LT     &kp LBKT  &kp LBRC  &kp LPAR   &kp AMPS         &kp AT     &kp  RPAR      &kp  RBRC    &kp RBKT  &kp GT
                           &sk LSHFT  &sk LALT  &sk LGUI  &sk LCTRL  &kp EQUAL        &kp TILDE  &msc SCRL_DOWN &msc SCRL_UP &none     &none
-            &kp LGUI(Z)   &kp HASH   &kp PIPE  &kp STAR  &kp MINUS  &kp PLUS         &kp CARET  &kp  BSLH      &kp  DLLR    &kp EXCL  &kp PRCNT  &kp GRAVE
-                                               &kp DEL   &none      &kp &none        &kp SPACE  &mo  Nav       &kp  LGUI(RET)
+            &kp LG(Z)     &kp HASH   &kp PIPE  &kp STAR  &kp MINUS  &kp PLUS         &kp CARET  &kp  BSLH      &kp  DLLR    &kp EXCL  &kp PRCNT  &kp GRAVE
+                                               &kp DEL   &none      &none            &kp SPACE  &mo  Nav       &kp  LG(RET)
             >;
         };
 
